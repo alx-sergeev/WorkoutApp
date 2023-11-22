@@ -21,6 +21,7 @@
 		3FAC39A62B0DEBD500C30D27 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC39A52B0DEBD500C30D27 /* SessionController.swift */; };
 		3FAC39A82B0DEBEB00C30D27 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC39A72B0DEBEB00C30D27 /* ProgressController.swift */; };
 		3FAC39AA2B0DEBFE00C30D27 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC39A92B0DEBFE00C30D27 /* SettingsController.swift */; };
+		3FAC39AD2B0DF94D00C30D27 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC39AC2B0DF94D00C30D27 /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		3FAC39A52B0DEBD500C30D27 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		3FAC39A72B0DEBEB00C30D27 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		3FAC39A92B0DEBFE00C30D27 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		3FAC39AC2B0DF94D00C30D27 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +74,10 @@
 		3F5AA8262B0D0ABE00075613 /* WorkoutApp */ = {
 			isa = PBXGroup;
 			children = (
-				3F5AA83F2B0D1EE500075613 /* Helpers */,
 				3F5AA83B2B0D105500075613 /* Application */,
-				3F5AA83C2B0D10B300075613 /* SupportingFiles */,
 				3FAC399B2B0DE60000C30D27 /* Controllers */,
+				3F5AA83F2B0D1EE500075613 /* Helpers */,
+				3F5AA83C2B0D10B300075613 /* SupportingFiles */,
 			);
 			path = WorkoutApp;
 			sourceTree = "<group>";
@@ -120,10 +122,10 @@
 		3FAC399B2B0DE60000C30D27 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3FAC39A12B0DEB9500C30D27 /* Overview */,
 				3FAC39A42B0DEBB500C30D27 /* Settings */,
 				3FAC39A32B0DEBAF00C30D27 /* Progress */,
 				3FAC39A22B0DEBA900C30D27 /* Session */,
-				3FAC39A12B0DEB9500C30D27 /* Overview */,
 				3FAC39A02B0DEB1800C30D27 /* Base */,
 			);
 			path = Controllers;
@@ -142,6 +144,7 @@
 		3FAC39A12B0DEB9500C30D27 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				3FAC39AB2B0DF93700C30D27 /* Views */,
 				3F5AA82B2B0D0ABE00075613 /* OverviewController.swift */,
 			);
 			path = Overview;
@@ -169,6 +172,14 @@
 				3FAC39A92B0DEBFE00C30D27 /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		3FAC39AB2B0DF93700C30D27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC39AC2B0DF94D00C30D27 /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				3F5AA8282B0D0ABE00075613 /* AppDelegate.swift in Sources */,
 				3F5AA82A2B0D0ABE00075613 /* SceneDelegate.swift in Sources */,
 				3FAC39A62B0DEBD500C30D27 /* SessionController.swift in Sources */,
+				3FAC39AD2B0DF94D00C30D27 /* SecondaryButton.swift in Sources */,
 				3FAC39A82B0DEBEB00C30D27 /* ProgressController.swift in Sources */,
 				3FAC399A2B0DE09400C30D27 /* NavBarController.swift in Sources */,
 				3F5AA8462B0D20A600075613 /* TabBarController.swift in Sources */,
