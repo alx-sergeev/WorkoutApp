@@ -11,12 +11,7 @@ final class OverviewNavBar: BaseView {
     private let titleLabel = UILabel()
     private let allWorkoutsButton = SecondaryButton()
     private let addButton = UIButton()
-    
-    private let weakView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .blue.withAlphaComponent(0.2)
-        return view
-    }()
+    private let weekView: UIView = WeekView()
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -34,14 +29,14 @@ final class OverviewNavBar: BaseView {
 }
 
 extension OverviewNavBar {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         
-        addViews(titleLabel, allWorkoutsButton, addButton, weakView)
+        addViews(titleLabel, allWorkoutsButton, addButton, weekView)
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -58,16 +53,16 @@ extension OverviewNavBar {
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             
-            weakView.topAnchor.constraint(equalTo: addButton.bottomAnchor, constant: 15),
-            weakView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
-            weakView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
-            weakView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15),
-            weakView.heightAnchor.constraint(equalToConstant: 47)
+            weekView.topAnchor.constraint(equalTo: addButton.bottomAnchor, constant: 15),
+            weekView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            weekView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
+            weekView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15),
+            weekView.heightAnchor.constraint(equalToConstant: 47)
         ])
     }
     
-    override func configure() {
-        super.configure()
+    override func configureAppearance() {
+        super.configureAppearance()
         
         backgroundColor = .white
         

@@ -24,6 +24,9 @@
 		3FAC39AD2B0DF94D00C30D27 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC39AC2B0DF94D00C30D27 /* SecondaryButton.swift */; };
 		3FED81772B0F2CB60097CF09 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED81762B0F2CB60097CF09 /* OverviewNavBar.swift */; };
 		3FED81792B0F2CDA0097CF09 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED81782B0F2CDA0097CF09 /* BaseView.swift */; };
+		3FED817C2B0F582C0097CF09 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED817B2B0F582C0097CF09 /* WeekView.swift */; };
+		3FED817E2B0F59D60097CF09 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED817D2B0F59D60097CF09 /* WeekdayView.swift */; };
+		3FED81802B0F638F0097CF09 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED817F2B0F638F0097CF09 /* Date + ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		3FAC39AC2B0DF94D00C30D27 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		3FED81762B0F2CB60097CF09 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		3FED81782B0F2CDA0097CF09 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		3FED817B2B0F582C0097CF09 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		3FED817D2B0F59D60097CF09 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
+		3FED817F2B0F638F0097CF09 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			children = (
 				3F5AA8412B0D1EF900075613 /* UIColor + ext.swift */,
 				3FAC399E2B0DE8B100C30D27 /* UIView + ext.swift */,
+				3FED817F2B0F638F0097CF09 /* Date + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,10 +189,20 @@
 		3FAC39AB2B0DF93700C30D27 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3FED817A2B0F580D0097CF09 /* WeekView */,
 				3FAC39AC2B0DF94D00C30D27 /* SecondaryButton.swift */,
 				3FED81762B0F2CB60097CF09 /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3FED817A2B0F580D0097CF09 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				3FED817B2B0F582C0097CF09 /* WeekView.swift */,
+				3FED817D2B0F59D60097CF09 /* WeekdayView.swift */,
+			);
+			path = WeekView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,17 +276,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAC39AA2B0DEBFE00C30D27 /* SettingsController.swift in Sources */,
+				3FED81802B0F638F0097CF09 /* Date + ext.swift in Sources */,
 				3F5AA82C2B0D0ABE00075613 /* OverviewController.swift in Sources */,
 				3FED81772B0F2CB60097CF09 /* OverviewNavBar.swift in Sources */,
 				3FAC399F2B0DE8B100C30D27 /* UIView + ext.swift in Sources */,
 				3F5AA8282B0D0ABE00075613 /* AppDelegate.swift in Sources */,
 				3F5AA82A2B0D0ABE00075613 /* SceneDelegate.swift in Sources */,
 				3FAC39A62B0DEBD500C30D27 /* SessionController.swift in Sources */,
+				3FED817E2B0F59D60097CF09 /* WeekdayView.swift in Sources */,
 				3FAC39AD2B0DF94D00C30D27 /* SecondaryButton.swift in Sources */,
 				3FAC39A82B0DEBEB00C30D27 /* ProgressController.swift in Sources */,
 				3FAC399A2B0DE09400C30D27 /* NavBarController.swift in Sources */,
 				3F5AA8462B0D20A600075613 /* TabBarController.swift in Sources */,
 				3F5AA8442B0D1FC300075613 /* Resources.swift in Sources */,
+				3FED817C2B0F582C0097CF09 /* WeekView.swift in Sources */,
 				3FED81792B0F2CDA0097CF09 /* BaseView.swift in Sources */,
 				3FAC399D2B0DE62300C30D27 /* BaseController.swift in Sources */,
 				3F5AA8422B0D1EF900075613 /* UIColor + ext.swift in Sources */,
