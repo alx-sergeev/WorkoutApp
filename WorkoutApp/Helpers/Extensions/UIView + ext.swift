@@ -44,4 +44,11 @@ extension UIView {
     @objc func handleOut() {
         UIView.animate(withDuration: 0.15) { self.alpha = 1 }
     }
+    
+    func addViews(_ views: UIView...) {
+        for view in views {
+            addSubview(view)
+            view.translatesAutoresizingMaskIntoConstraints = false
+        }
+    }
 }
