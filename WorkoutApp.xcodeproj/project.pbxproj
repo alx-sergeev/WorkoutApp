@@ -13,7 +13,7 @@
 		3F5AA8312B0D0AC000075613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AA8302B0D0AC000075613 /* Assets.xcassets */; };
 		3F5AA8342B0D0AC000075613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AA8322B0D0AC000075613 /* LaunchScreen.storyboard */; };
 		3F5AA8422B0D1EF900075613 /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AA8412B0D1EF900075613 /* UIColor + ext.swift */; };
-		3F5AA8442B0D1FC300075613 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AA8432B0D1FC300075613 /* Resources.swift */; };
+		3F5AA8442B0D1FC300075613 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AA8432B0D1FC300075613 /* R.swift */; };
 		3F5AA8462B0D20A600075613 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AA8452B0D20A600075613 /* TabBarController.swift */; };
 		3FAC399A2B0DE09400C30D27 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC39992B0DE09400C30D27 /* NavBarController.swift */; };
 		3FAC399D2B0DE62300C30D27 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC399C2B0DE62300C30D27 /* BaseController.swift */; };
@@ -38,7 +38,7 @@
 		3F5AA8332B0D0AC000075613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F5AA8352B0D0AC000075613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F5AA8412B0D1EF900075613 /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
-		3F5AA8432B0D1FC300075613 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		3F5AA8432B0D1FC300075613 /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		3F5AA8452B0D20A600075613 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3FAC39992B0DE09400C30D27 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		3FAC399C2B0DE62300C30D27 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
@@ -65,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F243A5F2B1DE861001DD1EB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC39992B0DE09400C30D27 /* NavBarController.swift */,
+				3F5AA8452B0D20A600075613 /* TabBarController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		3F5AA81B2B0D0ABE00075613 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3F5AA8402B0D1EEB00075613 /* Extensions */,
-				3F5AA8432B0D1FC300075613 /* Resources.swift */,
+				3F5AA8432B0D1FC300075613 /* R.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -133,6 +142,7 @@
 		3FAC399B2B0DE60000C30D27 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F243A5F2B1DE861001DD1EB /* Navigation */,
 				3FAC39A12B0DEB9500C30D27 /* Overview */,
 				3FAC39A42B0DEBB500C30D27 /* Settings */,
 				3FAC39A32B0DEBAF00C30D27 /* Progress */,
@@ -145,8 +155,6 @@
 		3FAC39A02B0DEB1800C30D27 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				3F5AA8452B0D20A600075613 /* TabBarController.swift */,
-				3FAC39992B0DE09400C30D27 /* NavBarController.swift */,
 				3FAC399C2B0DE62300C30D27 /* BaseController.swift */,
 				3FED81782B0F2CDA0097CF09 /* BaseView.swift */,
 			);
@@ -288,7 +296,7 @@
 				3FAC39A82B0DEBEB00C30D27 /* ProgressController.swift in Sources */,
 				3FAC399A2B0DE09400C30D27 /* NavBarController.swift in Sources */,
 				3F5AA8462B0D20A600075613 /* TabBarController.swift in Sources */,
-				3F5AA8442B0D1FC300075613 /* Resources.swift in Sources */,
+				3F5AA8442B0D1FC300075613 /* R.swift in Sources */,
 				3FED817C2B0F582C0097CF09 /* WeekView.swift in Sources */,
 				3FED81792B0F2CDA0097CF09 /* BaseView.swift in Sources */,
 				3FAC399D2B0DE62300C30D27 /* BaseController.swift in Sources */,

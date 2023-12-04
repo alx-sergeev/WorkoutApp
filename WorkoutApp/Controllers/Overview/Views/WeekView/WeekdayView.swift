@@ -19,13 +19,13 @@ extension WeekView {
             let day = Calendar.current.component(.day, from: currentDay)
             let isToday = currentDay.stripTime() == Date().stripTime()
             
-            backgroundColor = isToday ? Resources.Colors.active : Resources.Colors.background
+            backgroundColor = isToday ? R.Colors.active : R.Colors.background
             
             nameLabel.text = name.uppercased()
-            nameLabel.textColor = isToday ? .white : Resources.Colors.inactive
+            nameLabel.textColor = isToday ? .white : R.Colors.inactive
             
             dateLabel.text = "\(day)"
-            dateLabel.textColor = isToday ? .white : Resources.Colors.inactive
+            dateLabel.textColor = isToday ? .white : R.Colors.inactive
         }
     }
 }
@@ -54,10 +54,10 @@ extension WeekView.WeakdayView {
         layer.cornerRadius = 5
         layer.masksToBounds = true
         
-        nameLabel.font = Resources.Fonts.helveticaRegular(with: 9)
+        nameLabel.font = R.Fonts.helveticaRegular(with: 9)
         nameLabel.textAlignment = .center
         
-        dateLabel.font = Resources.Fonts.helveticaRegular(with: 15)
+        dateLabel.font = R.Fonts.helveticaRegular(with: 15)
         dateLabel.textAlignment = .center
         
         stackView.spacing = 3
